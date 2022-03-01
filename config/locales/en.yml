@@ -1,33 +1,49 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  global:
+    menu:
+      home: Home
+      help: Help
+      about: About
+      contact: Contact
+      news: News
+      sign_up: Sign Up
+    loc:
+      english: English
+      vietnamese: Vietnamese
+    base_title: Ruby on Rails Tutorial Sample App
+    ror_tutorial_label: Ruby on Rails Tutorial
+    ror_tutorial_author_label: Michael Hartl
+    ror_label: Ruby on Rails
+  static_pages:
+    home:
+      welcome: Welcome to the
+      content_html: >
+        This is the home page for the %{href} sample application.
+      signup_label: Sign up Now!
+    help:
+      content_html: >
+        Get help on the Ruby on Rails Tutorial at the %{href1}.
+        To get help on this sample app, see the %{href2}.
+      ror_tutorial_help: Ruby on Rails Tutorial Help
+      ror_sample_app_help: Ruby on Rails Tutorial Sample App Help
+    contact:
+      content_html: >
+        For contacting information, please redirect to %{href}.
+      ror_tutorial_contact: Contact Ruby on Rails Tutorial
+    about:
+      content_html: >
+        The %{href1}, part of the %{href2} family of
+        tutorials, is a %{href3} and %{href4} to teach web development with
+        %{href5}
+      learnenough_label: Learn Enough series
+      rails_book_label: Ruby on Rails Book
+      rails_screencast_label: Ruby on Rails Screencast
+  layouts:
+    header:
+      login_label: Log In
+    footer:
+      footer_small_html: The %{href1} by %{href2}
+  users:
+    new:
+      content_html: >
+        This is where new users can register their account.

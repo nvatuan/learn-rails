@@ -1,0 +1,12 @@
+<% provide(:title, t("global.menu.about")) %>
+<h1><%= t "global.menu.about" %></h1>
+<p>
+  <%=
+    t ".content_html",
+      href1: link_to(t(".railstutorial_label"), Settings.railstutorial_url),
+      href2: link_to(t(".learnenough_label"), Settings.learnenough_url),
+      href3: link_to(t(".rails_book_label"), Settings.ror_tutorial_book_url),
+      href4: link_to(t(".rails_screencast_label"), Settings.ror_tutorial_screencast_url),
+      href5: link_to(t("global.ror_label"), Settings.ror_url)
+  %>
+</p>

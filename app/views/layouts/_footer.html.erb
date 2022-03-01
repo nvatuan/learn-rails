@@ -1,0 +1,25 @@
+<footer class="footer">
+  <small>
+    <%=
+      t ".footer_small_html",
+        href1: link_to(t("global.ror_tutorial_label"), Settings.railstutorial_url),
+        href2: link_to(t("global.ror_tutorial_author_label"),
+                        Settings.michaelhartl_url)
+    %>
+  </small>
+  <nav>
+    <ul>
+      <li> <%= link_to t("global.loc.english"), locale: :en %> </li>
+      <li> <%= link_to t("global.loc.vietnamese"), locale: :vi %> </li>
+    </ul
+  </nav>
+  <nav>
+    <ul>
+      <li><%= link_to t("global.menu.about"), about_path %></li>
+      <li><%= link_to t("global.menu.contact"), contact_path %></li>
+      <li>
+        <%= link_to t("global.menu.news"), Settings.ror_tutorial_news_url %>
+      </li>
+    </ul>
+  </nav>
+</footer>

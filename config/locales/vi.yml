@@ -1,0 +1,49 @@
+vi:
+  global:
+    menu:
+      home: Home
+      help: Help
+      about: About
+      contact: Contact
+      news: News
+      sign_up: Sign Up
+    loc:
+      english: English
+      vietnamese: Vietnamese
+    base_title: Ứng dụng Ví dụ của Ruby on Rails Tutorial
+    ror_tutorial_label: Ruby on Rails Tutorial
+    ror_tutorial_author_label: Michael Hartl
+    ror_label: Ruby on Rails
+  static_pages:
+    home:
+      welcome: Xin chào mừng bạn đến với
+      content_html: >
+        Đây là trang chủ của ứng dụng sample app từ %{href}.
+      signup_label: Đăng ký Ngay!
+    help:
+      content_html: >
+        Để được hỗ trợ về Ruby on Rails hãy truy cập %{href1}.
+        Để được hỗ trợ về ứng dụng Sample App, hãy truy cập %{href2}.
+      ror_tutorial_help: Hỗ trợ Ruby on Rails Tutorial
+      ror_sample_app_help: Hỗ trợ ứng dụng Sample App - Ruby on Rails
+    contact:
+      content_html: Thông tin liên hệ Ruby on Rails Tutorial vui lòng truy cập vào %{href} đây.
+      ror_tutorial_contact: Liên hệ Ruby on Rails Tutorial
+    about:
+      content_html: >
+        Hướng dẫn %{href1}, là một phần của tuyển tập hướng dẫn %{href2},
+        là một %{href3} và là %{href4} được dùng để dạy phát triển ứng dụng web với
+        %{href5}
+      learnenough_label: sê-ri Learn Enough
+      rails_book_label: sách Ruby on Rails
+      rails_screencast_label: screencast Ruby on Rails
+  layouts:
+    header:
+      login_label: Đăng nhập
+    footer:
+      footer_small_html: >
+        %{href1} bởi %{href2}
+  users:
+    new:
+      content_html: >
+        Đây là trang cho phép đăng ký tài khoản mới.

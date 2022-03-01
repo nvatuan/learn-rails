@@ -1,0 +1,9 @@
+<% provide(:title, t("global.menu.help")) %>
+<h1><%= t "global.menu.help" %></h1>
+<p>
+  <%=
+    t ".content_html",
+      href1: link_to(t(".ror_tutorial_help"), Settings.ror_tutorial_help_url),
+      href2: link_to(t(".ror_sample_app_help"), Settings.ror_sample_app_help_url)
+  %>
+</p>
