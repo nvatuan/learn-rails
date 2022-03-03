@@ -28,6 +28,7 @@ AllCops:
     - 'app/views/**/*'
     - 'app/assets/**/*'
     - 'app/javascript/**/*'
+    - 'app/models/javascript/**/*'
     - '.idea/**/*'
     - '**/.DS_Store'
     - '**/.keep'
