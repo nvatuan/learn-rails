@@ -14,6 +14,7 @@ vi:
     ror_tutorial_label: Ruby on Rails Tutorial
     ror_tutorial_author_label: Michael Hartl
     ror_label: Ruby on Rails
+
   static_pages:
     home:
       welcome: Xin chào mừng bạn đến với
@@ -37,13 +38,34 @@ vi:
       learnenough_label: sê-ri Learn Enough
       rails_book_label: sách Ruby on Rails
       rails_screencast_label: screencast Ruby on Rails
+
   layouts:
     header:
       login_label: Đăng nhập
     footer:
       footer_small_html: >
         %{href1} bởi %{href2}
+
+  shared:
+    error_messages:
+      err_prefix: Biễu mẫu đăng ký có %{err_content}
+      err_noun: lỗi
+
+  activerecord:
+    attributes:
+      user:
+        name: Tên
+        email: Địa chỉ Email
+        password: Mật khẩu
+        password_confirmation: Mật khẩu xác nhận
+
   users:
+    not_found: Không thể tìm thấy người dùng này.
+    create:
+      create_succeeded: Chào mừng bạn đến với Sample App
+      create_failed: Đăng ký thất bại! Xin hãy thử lại!
     new:
       content_html: >
         Đây là trang cho phép đăng ký tài khoản mới.
+      label:
+        submit_btn: Đăng ký tài khoản
