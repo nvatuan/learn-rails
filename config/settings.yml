@@ -15,3 +15,7 @@ length:
   username_max_len: 50
   email_max_len: 256
   password_min_len: 6
+
+gravatar:
+  base_url: https://secure.gravatar.com/avatar
+  default_size: 80
