@@ -8,3 +8,10 @@ ror_tutorial_book_url: https://www.railstutorial.org/book
 ror_tutorial_screencast_url: https://screencasts.railstutorial.org/
 ror_url: https://rubyonrails.org/
 ror_tutorial_news_url: https://news.railstutorial.org/
+
+regex:
+  email_regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
+length:
+  username_max_len: 50
+  email_max_len: 256
+  password_min_len: 6
