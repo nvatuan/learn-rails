@@ -41,10 +41,41 @@ vi:
 
   layouts:
     header:
-      login_label: Đăng nhập
+      login_lbl: Đăng Nhập
+      users_lbl: Users
+      dropdown_lbl: Tài Khoản
+      profile_lbl: Hồ Sơ
+      settings_lbl: Thiết Lập
+      logout_lbl: Đăng Xuất
     footer:
       footer_small_html: >
         %{href1} bởi %{href2}
+
+  users:
+    not_found: Không thể tìm thấy người dùng này.
+    create:
+      create_succeeded: Chào mừng bạn đến với Sample App
+      create_failed: Đăng ký thất bại! Xin hãy thử lại!
+    new:
+      content_html: >
+        Đây là trang cho phép đăng ký tài khoản mới.
+      label:
+        pw_confirm: Xác nhận Mật khẩu
+        submit_btn: Đăng ký tài khoản
+
+  sessions:
+    new:
+      title: Đăng Nhập
+      content_html: Chưa có tài khoản? %{href}
+      sign_up_now_lbl: Đăng ký ngay!
+      email_field_lbl: Email
+      password_field_lbl: Mật khẩu
+    create:
+      error:
+        bad_credentials: Mật khẩu hoặc Email không đúng
+    destroy:
+      info:
+        logout_msg: Gặp lại bạn sau
 
   shared:
     error_messages:
@@ -58,14 +89,3 @@ vi:
         email: Địa chỉ Email
         password: Mật khẩu
         password_confirmation: Mật khẩu xác nhận
-
-  users:
-    not_found: Không thể tìm thấy người dùng này.
-    create:
-      create_succeeded: Chào mừng bạn đến với Sample App
-      create_failed: Đăng ký thất bại! Xin hãy thử lại!
-    new:
-      content_html: >
-        Đây là trang cho phép đăng ký tài khoản mới.
-      label:
-        submit_btn: Đăng ký tài khoản
