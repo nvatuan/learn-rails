@@ -70,6 +70,7 @@ vi:
       sign_up_now_lbl: Đăng ký ngay!
       email_field_lbl: Email
       password_field_lbl: Mật khẩu
+      remember_me_lbl: Ghi nhớ đăng nhập
     create:
       error:
         bad_credentials: Mật khẩu hoặc Email không đúng
