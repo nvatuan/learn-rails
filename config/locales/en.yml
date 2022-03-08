@@ -53,6 +53,9 @@ en:
 
   users:
     not_found: User not found.
+    not_logged_in: Please log in first!
+    not_correct_user: You can't edit other user's settings.
+    unauthorized: You don't have permission.
     create:
       create_succeeded: Welcome to Sample App!
       create_failed: Failed to Sign Up! Please try again!
@@ -62,6 +65,23 @@ en:
       label:
         pw_confirm: Password Confirmation
         submit_btn: Create my account
+    edit:
+      title: Edit
+      gravatar_change_lbl: Change Avatar
+    update:
+      update_suceeded: Update saved!
+      update_failed: Update failed!
+    destroy:
+      delete_succeeded: Delete succeeded.
+      destroy_failed: Delete failed!
+    index:
+      title: Index
+      delete_lbl: Delete
+      del_confirm_text: Are you sure?
+    form:
+      label:
+        submit_btn: Submit
+
 
   sessions:
     new:
