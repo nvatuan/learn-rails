@@ -144,6 +144,17 @@ footer {
   }
 }
 
+/* Users index */
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+}
+
 /* Forms */
 input, textarea, select, .eneditable-input {
   border: 1px solid $gray;
@@ -167,6 +178,20 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+width: auto;
+margin-left: 0;
 }
 
 /* Misc. */

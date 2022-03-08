@@ -4,8 +4,11 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 gem "bcrypt",                     "3.1.12"
 gem "bootsnap",                   "1.7.2", require: false
 gem "bootstrap-sass",             "3.4.1"
+gem "bootstrap-will_paginate",    "1.0.0"
 gem "config",                     "4.0.0"
+gem "faker",                      "2.11.0"
 gem "jbuilder",                   "2.10.0"
+gem "pagy",                       "5.10.1"
 gem "puma",                       "5.3.1"
 gem "rails",                      "6.1.4.1"
 gem "rails-i18n",                 "7.0.3"

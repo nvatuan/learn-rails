@@ -11,11 +11,16 @@ ror_tutorial_news_url: https://news.railstutorial.org/
 
 regex:
   email_regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
+
 length:
   username_max_len: 50
   email_max_len: 256
   password_min_len: 6
 
+paginate:
+  items_per_page: 10
+
 gravatar:
   base_url: https://secure.gravatar.com/avatar
   default_size: 80
+  edit_url: https://gravatar.com/emails

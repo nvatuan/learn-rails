@@ -5,7 +5,26 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to t("global.menu.home"), root_path %></li>
         <li><%= link_to t("global.menu.help"), help_path %></li>
-        <li><%= link_to t(".login_label"), "#" %></li>
+
+        <% if logged_in? %>
+          <li><%= link_to t(".users_lbl"), users_path %></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <%= t(".dropdown_lbl") %><b class="caret"></b>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><%= link_to t(".profile_lbl"), current_user %></li>
+              <li><%= link_to t(".settings_lbl"), edit_user_path(current_user) %></li>
+              <li class="divider"></li>
+              <li>
+                <%= link_to t(".logout_lbl"), logout_path, method: :delete %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to t(".login_lbl"), login_path %></li>
+        <% end %>
       </ul>
     </nav>
   </div>

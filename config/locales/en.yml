@@ -42,9 +42,61 @@ en:
 
   layouts:
     header:
-      login_label: Log In
+      login_lbl: Log In
+      users_lbl: Users
+      dropdown_lbl: Account
+      profile_lbl: Profile
+      settings_lbl: Settings
+      logout_lbl: Log Out
     footer:
       footer_small_html: The %{href1} by %{href2}
+
+  users:
+    not_found: User not found.
+    not_logged_in: Please log in first!
+    not_correct_user: You can't edit other user's settings.
+    unauthorized: You don't have permission.
+    create:
+      create_succeeded: Welcome to Sample App!
+      create_failed: Failed to Sign Up! Please try again!
+    new:
+      content_html: >
+        This is where new users can register their account.
+      label:
+        pw_confirm: Password Confirmation
+        submit_btn: Create my account
+    edit:
+      title: Edit
+      gravatar_change_lbl: Change Avatar
+    update:
+      update_suceeded: Update saved!
+      update_failed: Update failed!
+    destroy:
+      delete_succeeded: Delete succeeded.
+      destroy_failed: Delete failed!
+    index:
+      title: Index
+      delete_lbl: Delete
+      del_confirm_text: Are you sure?
+    form:
+      label:
+        submit_btn: Submit
+
+
+  sessions:
+    new:
+      title: Log In
+      content_html: New user? %{href}
+      sign_up_now_lbl: Sign up now!
+      email_field_lbl: Email
+      password_field_lbl: Password
+      remember_me_lbl: Remember me
+    create:
+      error:
+        bad_credentials: Invalid email/password combination
+    destroy:
+      info:
+        logout_msg: See you later!
 
   shared:
     error_messages:
@@ -58,15 +110,3 @@ en:
         email: Email
         password: Password
         password_confirmation: Password Confirmation
-
-  users:
-    not_found: User not found.
-    create:
-      create_succeeded: Welcome to Sample App!
-      create_failed: Failed to Sign Up! Please try again!
-    new:
-      content_html: >
-        This is where new users can register their account.
-      label:
-        pw_confirm: Password Confirmation
-        submit_btn: Create my account

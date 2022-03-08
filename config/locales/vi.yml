@@ -41,10 +41,61 @@ vi:
 
   layouts:
     header:
-      login_label: Đăng nhập
+      login_lbl: Đăng Nhập
+      users_lbl: Danh sách Người dùng
+      dropdown_lbl: Tài Khoản
+      profile_lbl: Hồ Sơ
+      settings_lbl: Thiết Lập
+      logout_lbl: Đăng Xuất
     footer:
       footer_small_html: >
         %{href1} bởi %{href2}
+
+  users:
+    not_found: Không thể tìm thấy người dùng này.
+    not_logged_in: Xin hãy đăng nhập trước!
+    not_correct_user: Bạn không thể chỉnh sửa hồ sơ của người khác
+    unauthorized: Bạn không có quyền cho thao tác này
+    create:
+      create_succeeded: Chào mừng bạn đến với Sample App
+      create_failed: Đăng ký thất bại! Xin hãy thử lại!
+    new:
+      content_html: >
+        Đây là trang cho phép đăng ký tài khoản mới.
+      label:
+        pw_confirm: Xác nhận Mật khẩu
+        submit_btn: Đăng ký tài khoản
+    edit:
+      title: Chỉnh sửa
+      gravatar_change_lbl: Thay đổi ảnh đại diện
+    update:
+      update_suceeded: Chỉnh sửa thành công!
+      update_failed: Chỉnh sửa thất bại!
+    destroy:
+      delete_succeeded: Xóa thành công.
+      delete_failed: Xóa thất bại!
+    index:
+      title: Index
+      delete_lbl: Xóa
+      del_confirm_text: Bạn có chắc chắn muốn xóa?
+    form:
+      label:
+        submit_btn: Xác nhận
+
+  sessions:
+    new:
+      title: Đăng Nhập
+      content_html: Chưa có tài khoản? %{href}
+      sign_up_now_lbl: Đăng ký ngay!
+      email_field_lbl: Email
+      password_field_lbl: Mật khẩu
+      remember_me_lbl: Ghi nhớ đăng nhập
+    create:
+      error:
+        bad_credentials: Mật khẩu hoặc Email không đúng
+    destroy:
+      info:
+        logout_msg: Gặp lại bạn sau
 
   shared:
     error_messages:
@@ -58,14 +109,3 @@ vi:
         email: Địa chỉ Email
         password: Mật khẩu
         password_confirmation: Mật khẩu xác nhận
-
-  users:
-    not_found: Không thể tìm thấy người dùng này.
-    create:
-      create_succeeded: Chào mừng bạn đến với Sample App
-      create_failed: Đăng ký thất bại! Xin hãy thử lại!
-    new:
-      content_html: >
-        Đây là trang cho phép đăng ký tài khoản mới.
-      label:
-        submit_btn: Đăng ký tài khoản
