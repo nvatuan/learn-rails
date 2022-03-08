@@ -70,6 +70,7 @@ en:
       sign_up_now_lbl: Sign up now!
       email_field_lbl: Email
       password_field_lbl: Password
+      remember_me_lbl: Remember me
     create:
       error:
         bad_credentials: Invalid email/password combination
