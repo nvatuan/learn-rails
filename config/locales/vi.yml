@@ -42,7 +42,7 @@ vi:
   layouts:
     header:
       login_lbl: Đăng Nhập
-      users_lbl: Users
+      users_lbl: Danh sách Người dùng
       dropdown_lbl: Tài Khoản
       profile_lbl: Hồ Sơ
       settings_lbl: Thiết Lập
@@ -53,6 +53,9 @@ vi:
 
   users:
     not_found: Không thể tìm thấy người dùng này.
+    not_logged_in: Xin hãy đăng nhập trước!
+    not_correct_user: Bạn không thể chỉnh sửa hồ sơ của người khác
+    unauthorized: Bạn không có quyền cho thao tác này
     create:
       create_succeeded: Chào mừng bạn đến với Sample App
       create_failed: Đăng ký thất bại! Xin hãy thử lại!
@@ -62,6 +65,22 @@ vi:
       label:
         pw_confirm: Xác nhận Mật khẩu
         submit_btn: Đăng ký tài khoản
+    edit:
+      title: Chỉnh sửa
+      gravatar_change_lbl: Thay đổi ảnh đại diện
+    update:
+      update_suceeded: Chỉnh sửa thành công!
+      update_failed: Chỉnh sửa thất bại!
+    destroy:
+      delete_succeeded: Xóa thành công.
+      delete_failed: Xóa thất bại!
+    index:
+      title: Index
+      delete_lbl: Xóa
+      del_confirm_text: Bạn có chắc chắn muốn xóa?
+    form:
+      label:
+        submit_btn: Xác nhận
 
   sessions:
     new:
@@ -70,6 +89,7 @@ vi:
       sign_up_now_lbl: Đăng ký ngay!
       email_field_lbl: Email
       password_field_lbl: Mật khẩu
+      remember_me_lbl: Ghi nhớ đăng nhập
     create:
       error:
         bad_credentials: Mật khẩu hoặc Email không đúng

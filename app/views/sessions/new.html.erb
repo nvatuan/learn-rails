@@ -13,6 +13,11 @@
       <%= f.password_field :password, class: "form-control",
                             required: true %>
 
+      <%= f.label :remember_me, class: "checkoux inline" do %>
+        <%= f.check_box :remember_me %>
+        <span><%= t ".remember_me_lbl" %></span>
+      <% end %>
+
       <%= f.submit t(".title"), class: "btn btn-primary" %>
     <% end %>
 
