@@ -5,10 +5,13 @@ class UsersController < ApplicationController
   before_action :is_admin?, only: :destroy
 
   def index
-    @pagy, @users = pagy User.all, items: Settings.paginate.items_per_page
+    @pagy, @users = pagy  User.activated,
+                          items: Settings.paginate.items_per_page
   end
 
-  def show; end
+  def show
+    redirect_to(root_url) && return unless @user.activated?
+  end
 
   def edit; end
 
@@ -19,9 +22,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t ".create_succeeded"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".activation_required"
+      redirect_to root_url
     else
       flash.now[:danger] = t ".create_failed"
       render :new

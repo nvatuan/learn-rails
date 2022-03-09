@@ -59,6 +59,7 @@ vi:
     create:
       create_succeeded: Chào mừng bạn đến với Sample App
       create_failed: Đăng ký thất bại! Xin hãy thử lại!
+      activation_required: Xin vui lòng kiểm tra email của bạn để kích hoạt tài khoản.
     new:
       content_html: >
         Đây là trang cho phép đăng ký tài khoản mới.
@@ -93,6 +94,7 @@ vi:
     create:
       error:
         bad_credentials: Mật khẩu hoặc Email không đúng
+        not_activated: Tài khoản của bạn chưa được kích hoạt. Xin vui lòng kiểm tra email để kích hoạt tài khoản.
     destroy:
       info:
         logout_msg: Gặp lại bạn sau
@@ -109,3 +111,11 @@ vi:
         email: Địa chỉ Email
         password: Mật khẩu
         password_confirmation: Mật khẩu xác nhận
+
+  user_mailer:
+    account_activation:
+      title: Email Kích hoạt Tài khoản
+      mail_subject: Kích hoạt Tài khoản
+      mail_greeting: Xin chào %{name}
+      mail_content: Chào mừng đến với Sample App! Hãy nhấn vào link bên dưới để kích hoạt tài khoản của bạn.
+      mail_activate_link_lbl: Kích hoạt Ngay

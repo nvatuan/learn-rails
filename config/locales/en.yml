@@ -59,6 +59,7 @@ en:
     create:
       create_succeeded: Welcome to Sample App!
       create_failed: Failed to Sign Up! Please try again!
+      activation_required: Please check your email for account activation URL.
     new:
       content_html: >
         This is where new users can register their account.
@@ -94,6 +95,7 @@ en:
     create:
       error:
         bad_credentials: Invalid email/password combination
+        not_activated: Your account is not activated. Please check your mail for the activation URL.
     destroy:
       info:
         logout_msg: See you later!
@@ -110,3 +112,11 @@ en:
         email: Email
         password: Password
         password_confirmation: Password Confirmation
+
+  user_mailer:
+    account_activation:
+      title: Account Activation Email
+      mail_subject: Account Activation
+      mail_greeting: Hi %{name}
+      mail_content: Welcome to Sample App! Please click the link below to activate your account.
+      mail_activate_link_lbl: Activate Here
